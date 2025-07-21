@@ -78,6 +78,7 @@ services:
       - ../../lib/logging.sh:/usr/local/lib/logging.sh:ro
     command:
       - start
+      - --rollkit.rpc.address=0.0.0.0:7331
       - --rollkit.instrumentation.prometheus
       - --rollkit.instrumentation.prometheus_listen_addr=:26660
     environment:
